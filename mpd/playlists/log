@@ -1,0 +1,35 @@
+Aug 04 17:13 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 04 17:13 : update: added Паша Техник, CONDUCTOR MC - Веснушки/Паша Техник & Conductor Mc - Звёздочка.mp3
+Aug 04 17:13 : update: added Паша Техник, CONDUCTOR MC - Веснушки/Паша Техник & Conductor Mc - Девочка-цунами.mp3
+Aug 04 17:13 : update: added Паша Техник, CONDUCTOR MC - Веснушки/Паша Техник & Conductor Mc - Кружева.mp3
+Aug 04 17:13 : update: added Паша Техник, CONDUCTOR MC - Веснушки/Паша Техник & Conductor Mc - Веснушки.mp3
+Aug 04 17:13 : update: added Паша Техник, CONDUCTOR MC - Веснушки/Паша Техник & Conductor Mc - Луи.mp3
+Aug 04 17:13 : update: added Cream Soda - Kometa - 2019/11 - 1000 Планет (feat. Nick Rouze).mp3
+Aug 04 17:13 : update: added Cream Soda - Kometa - 2019/12 - К Тебе (Live).mp3
+Aug 04 17:13 : update: added Cream Soda - Kometa - 2019/05 - Ритуал (feat. SALUKI & Nick Rouze).mp3
+Aug 04 17:13 : update: added Cream Soda - Kometa - 2019/06 - ТТТ.mp3
+Aug 04 17:13 : update: added Cream Soda - Kometa - 2019/02 - Никаких Больше Вечеринок.mp3
+Aug 04 17:13 : update: added Cream Soda - Kometa - 2019/08 - Песня На Луне (feat. Nick Rouze).mp3
+Aug 04 17:13 : update: added Cream Soda - Kometa - 2019/04 - Солд Аут.mp3
+Aug 04 17:13 : update: added Cream Soda - Kometa - 2019/01 - Комета.mp3
+Aug 04 17:13 : update: added Cream Soda - Kometa - 2019/09 - Прятки.mp3
+Aug 04 17:13 : update: added Cream Soda - Kometa - 2019/03 - Белая Стрела (feat. Basic Boy).mp3
+Aug 04 17:13 : update: added Cream Soda - Kometa - 2019/07 - Лак (feat. ЛАУД).mp3
+Aug 04 17:13 : update: added Cream Soda - Kometa - 2019/10 - Перелетная Птица (feat. Lurmish).mp3
+Aug 04 17:13 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 04 17:15 : player: played "Паша Техник, CONDUCTOR MC - Веснушки/Паша Техник & Conductor Mc - Звёздочка.mp3"
+Aug 04 17:15 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 04 17:15 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 04 17:17 : player: played "Паша Техник, CONDUCTOR MC - Веснушки/Паша Техник & Conductor Mc - Звёздочка.mp3"
+Aug 04 17:17 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 04 17:17 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 04 17:17 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 04 18:51 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 04 18:51 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 04 18:53 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 04 18:56 : player: played "Паша Техник, CONDUCTOR MC - Веснушки/Паша Техник & Conductor Mc - Кружева.mp3"
+Aug 04 19:01 : player: played "Паша Техник, CONDUCTOR MC - Веснушки/Паша Техник & Conductor Mc - Звёздочка.mp3"
+Aug 04 19:04 : player: played "Паша Техник, CONDUCTOR MC - Веснушки/Паша Техник & Conductor Mc - Веснушки.mp3"
+Aug 04 19:07 : player: played "Паша Техник, CONDUCTOR MC - Веснушки/Паша Техник & Conductor Mc - Девочка-цунами.mp3"
+Aug 04 19:10 : player: played "Паша Техник, CONDUCTOR MC - Веснушки/Паша Техник & Conductor Mc - Луи.mp3"
+Aug 04 19:13 : player: played "Паша Техник, CONDUCTOR MC - Веснушки/Паша Техник & Conductor Mc - Кружева.mp3"
