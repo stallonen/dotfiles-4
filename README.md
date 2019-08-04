@@ -1,2 +1,2 @@
 hello!
-this is linux rice.
+this is arch linux rice.
