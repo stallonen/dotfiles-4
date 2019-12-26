@@ -316,6 +316,29 @@
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
+    <!-- Keybindings for mpc control -->
+    <keybind key="S-XF86AudioPlay">
+      <action name="Execute">
+        <command>mpc pause</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioPlay">
+      <action name="Execute">
+        <command>mpc play</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioPrev">
+      <action name="Execute">
+        <command>mpc prev</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioNext">
+      <action name="Execute">
+        <command>mpc next</command>
+      </action>
+    </keybind>
+<!-- Keybindings for mpc control -->
+
     <keybind key="A-t">
       <action name="Execute">
         <command>urxvt</command>
@@ -338,7 +361,7 @@
     </keybind>
     <keybind key="A-n">
       <action name="Execute">
-        <command>urxvt -e ncmpcpp</command>
+        <command>urxvt -geometry 60x17 -e ncmpcpp</command>
       </action>
     </keybind>
     <keybind key="A-f">
@@ -759,7 +782,7 @@
   # order that they appear in this list
 
 
-    # each rule element can be left out or set to 'default' to specify to not 
+    # each rule element can be left out or set to 'default' to specify to not
     # change that attribute of the window
 
     <decor>yes</decor>
@@ -825,6 +848,13 @@
 
   # end of the example
 -->
+    <application title="ncmpcpp">
+      <position>
+        <x>15</x>
+        <y>15</y>
+      </position>
+    </application>
+
     <application class="*">
       <decor>no</decor>
     </application>
