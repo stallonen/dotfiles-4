@@ -1,3 +1,14 @@
+!
+!
+!__   __   _       __            _ _       
+!\ \ / /  | |     / _|          | | |      
+! \ V / __| | ___| |_ __ _ _   _| | |_ ___ 
+!  > < / _` |/ _ \  _/ _` | | | | | __/ __|
+! / . \ (_| |  __/ || (_| | |_| | | |_\__ \
+!/_/ \_\__,_|\___|_| \__,_|\__,_|_|\__|___/
+!                                          
+!                                          
+!
 !Перечитать файл и применить настройки
 !(при наличии ошибок выведет отчёт):
 !xrdb -load ~/.Xdefaults
@@ -14,7 +25,7 @@
 ! Настройки цветовой схемы
 ! special
 *.foreground:   #c7ccd1
-*.background:   #1c2023
+*.background:   #181B1E
 *.cursorColor:  #c7ccd1
 
 ! black
@@ -54,7 +65,7 @@ URxvt.internalBorder:  20
 !URxvt*font: xft:monaco:size=9
 !URxvt*font: xft:mononoki:size=10
 !URxvt*font: xft:source code pro:size=9
-URxvt*font: xft:xos4 Terminus:size=10
+URxvt*font: xft:xos4 Terminus:size=8
 
 !URxvt.letterSpace: -1
 
@@ -129,7 +140,7 @@ URxvt.tabbed.tabbar-bg:     0
 URxvt.tabbed.tab-fg:        0
 URxvt.tabbed.tab-bg:        14
 ! Оболочка
-URxvt.geometry:         93x27
+URxvt.geometry:         87x28
 URxvt.loginShell:       false
 URxvt.meta:             ignore
 URxvt.utmpInhibit:      true

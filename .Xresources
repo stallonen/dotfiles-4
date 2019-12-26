@@ -1,0 +1,50 @@
+!
+!
+!__   __                                            
+!\ \ / /                                            
+! \ V / _ __ ___  ___  ___  _   _ _ __ ___ ___  ___ 
+!  > < | '__/ _ \/ __|/ _ \| | | | '__/ __/ _ \/ __|
+! / . \| | |  __/\__ \ (_) | |_| | | | (_|  __/\__ \
+!/_/ \_\_|  \___||___/\___/ \__,_|_|  \___\___||___/
+!                                                   
+!                                                   
+!
+!Layout
+
+rofi.width: 1680
+
+rofi.location: 0
+
+!rofi.xoffset: -100
+
+!rofi.yoffset: 100
+
+!rofi.fullscreen: true
+
+rofi.padding: 750
+
+rofi.lines: 5
+
+rofi.columns: 1
+
+rofi.line-margin: 3
+
+rofi.line-padding: 3
+
+rofi.font: Noto Sans Bold 10
+
+rofi.hide-scrollbar: true
+
+rofi.color-enabled: true
+
+!                 'background','border','separator'
+
+rofi.color-window: #CC000000, #252525, #001e2529
+
+! State:           'bg',    'fg',    'bgalt', 'hlbg',  'hlfg'
+
+rofi.color-normal: #00252525, #c1c1c1, #00252525, #00212121, #e88bd8
+
+rofi.color-active: #252525, #80cbc4, #252525, #383838, #80cbc4
+
+rofi.color-urgent: #252525, #ff1844, #252525, #383838, #ff1844

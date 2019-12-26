@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openbox_menu xmlns="http://openbox.org/3.4/menu">
 	<menu id="apps-editors-menu" label="editors">
+		<item label="vim">
+			<action name="Execute">
+				<execute>urxvt -e vim</execute>
+			</action>
+		</item>
 		<item label="nano">
 			<action name="Execute">
 				<execute>urxvt -e nano</execute>
@@ -53,9 +58,9 @@
 		</item>
 	</menu>
 	<menu id="apps-fileman-menu" label="file managers">
-		<item label="thunar">
+		<item label="pcmanfm">
 			<action name="Execute">
-				<command>Thunar</command>
+				<command>pcmanfm</command>
 				<startupnotify>
 					<enabled>yes</enabled>
 				</startupnotify>

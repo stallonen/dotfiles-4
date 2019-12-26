@@ -1,20 +1,17 @@
-! Arcbox
-! https://github.com/gcavallo/arcbox/
-
 ! Copyright (c) 2015, Gabriel Cavallo
 ! GPLv3 https://www.gnu.org/licenses/gpl.txt
 
 !! Window title
-window.label.text.justify: left
+window.label.text.justify: center
 window.active.label.bg: parentrelative
 window.active.label.text.color: #c3c9d9
 window.inactive.label.bg: parentrelative
 window.inactive.label.text.color: #646b80
 
 window.active.title.bg: flat solid
-window.active.title.bg.color: #2f343f
+window.active.title.bg.color: #7C7C7C
 window.inactive.title.bg: flat solid
-window.inactive.title.bg.color: #404552
+window.inactive.title.bg.color: #24292D
 
 !! Window buttons
 window.*.button.*.bg: parentrelative
@@ -26,11 +23,11 @@ window.active.button.disabled.image.color: #404552
 window.inactive.button.disabled.image.color: #2f343f
 
 !! Window borders
-window.active.border.color: #2f343f
-window.inactive.border.color: #404552
-window.inactive.title.separator.color: #404552
+window.active.border.color: #7C7C7C
+window.inactive.border.color: #24292D
+window.inactive.title.separator.color: #24292D
 border.width: 3
-padding.width: 2
+padding.width: 5
 window.handle.width: 0
 window.client.padding.width: 0
 window.client.padding.height: 0
@@ -42,14 +39,14 @@ menu.title.text.color: #c3c9d9
 menu.title.text.justify: center
 
 menu.items.bg: flat solid
-menu.items.bg.color: #1c2023
+menu.items.bg.color: #181B1E
 menu.items.text.color: #c3c9d9
 menu.items.justify: left
 menu.items.disabled.text.color: #646b80
 menu.items.font:shadow=y:shadowtint=20
 
 menu.items.active.bg: flat solid
-menu.items.active.bg.color: #FF91C7
+menu.items.active.bg.color: #7C7C7C
 menu.items.active.text.color: #ffffff
 
 menu.overlap.x: -7

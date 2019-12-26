@@ -98,7 +98,7 @@ header_visibility = "no"
 statusbar_visibility = "no"
 
 statusbar_color = "white"
-visualizer_color = "white"
+visualizer_color = "magenta"
 titles_visibility = "no"
 enable_window_title = "yes"
 
@@ -346,7 +346,7 @@ song_window_title_format = " {%a} - {%t}"
 ## Note: Custom command that will be executed each time song changes. Useful for
 ## notifications etc.
 ##
-#execute_on_song_change = ""
+#execute_on_song_change = "notify-send "$(ncmpcpp --current-song="{%a - }{%t}|{%f}")""
 #
 ##
 ## Note: Custom command that will be executed each time player state
