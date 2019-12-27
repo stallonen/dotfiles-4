@@ -53,7 +53,7 @@ lyrics_directory = ~/.lyrics
 
 #visualizer_fifo_path = "/tmp/mpd.fifo"
 #visualizer_output_name = "my_fifo"
-#visualizer_sync_interval = "30" 
+#visualizer_sync_interval = "30"
 #visualizer_in_stereo = "yes"
 #visualizer_type = "spectrum"
 #visualizer_look = "+|"
@@ -69,7 +69,8 @@ visualizer_fifo_path = "/tmp/mpd.fifo"
 visualizer_output_name = "my_fifo"
 visualizer_sync_interval = "10"
 visualizer_type = "spectrum"
-visualizer_look = "▋▋"
+#visualizer_look = "▋▋"
+visualizer_look = "▎▎"
 
 message_delay_time = "3"
 playlist_shorten_total_times = "yes"
@@ -349,6 +350,7 @@ song_window_title_format = " {%a} - {%t}"
 ## notifications etc.
 ##
 #execute_on_song_change = "notify-send "$(ncmpcpp --current-song="{%a - }{%t}|{%f}")""
+#execute_on_song_change = "notify-send "$(mpc current)""
 #
 ##
 ## Note: Custom command that will be executed each time player state
@@ -356,7 +358,7 @@ song_window_title_format = " {%a} - {%t}"
 ## state (either unknown, play, pause, or stop) for its duration.
 ##
 #
-#execute_on_player_state_change = ""
+#execute_on_player_state_change = "notify-send "$(mpc current)""
 #
 #playlist_show_mpd_host = no
 #

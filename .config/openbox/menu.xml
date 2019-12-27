@@ -22,7 +22,7 @@
 			</action>
 		</item>
 	</menu>
-	<menu id="apps-term-menu" label="terminals">
+	<menu id="apps-term-menu" label="terminal">
 		<item label="rxvt unicode">
 			<action name="Execute">
 				<command>urxvt</command>
@@ -50,7 +50,7 @@
 			</action>
 		</item>
 	</menu>
-	<menu id="apps-multimedia-menu" label="multimedia">
+	<menu id="apps-multimedia-menu" label="media">
 		<item label="ncmpcpp">
 			<action name="Execute">
 				<execute>urxvt -e ncmpcpp</execute>

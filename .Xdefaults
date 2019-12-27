@@ -62,12 +62,15 @@
 
 URxvt.internalBorder:  20
 
-!URxvt*font: xft:monaco:size=9
+!URxvt*font: xft:sfmono:size=9
 !URxvt*font: xft:mononoki:size=10
 !URxvt*font: xft:source code pro:size=9
+!URxvt*font: xft:iosevka:size=10
 URxvt*font: xft:xos4 Terminus:size=8
 
 !URxvt.letterSpace: -1
+
+URxvt.secondaryWheel: 1
 
 ! Будет ли курсор мигать
 URxvt.cursorBlink:      true
