@@ -6,7 +6,7 @@ This is my simple Arch Linux rice:
   - Menu editor: [ObMenu](http://obmenu.sourceforge.net/)
 * Taskbar: [Tint2](https://gitlab.com/o9000/tint2)
 * Terminal: [urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html)
-* File managers: [PCManFM][https://wiki.lxde.org/en/PCManFM] and [ranger](https://ranger.github.io/)
+* File managers: [PCManFM](https://wiki.lxde.org/en/PCManFM) and [ranger](https://ranger.github.io/)
 * Browser: [Chromium](https://www.chromium.org/)
 * Network manager: [dhcpcd](https://roy.marples.name/projects/dhcpcd)
   - Network Configurator: [dhcpcd-ui](https://roy.marples.name/projects/dhcpcd-ui)
