@@ -1,5 +1,5 @@
 Hello!
-This is my simple Arch Linux rice.
+This is my simple Arch Linux rice:
 
 * WM: [Openbox](http://openbox.org/wiki/Main_Page)
   - Configuration tool: [ObConf](http://openbox.org/wiki/ObConf:About)
