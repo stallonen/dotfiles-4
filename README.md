@@ -1,7 +1,5 @@
-hello!
-this is my simple arch linux rice.
-
-![Image alt](https://i.imgur.com/nMAT7Fy.png)
+Hello!
+This is my simple Arch Linux rice.
 
 * WM: [Openbox](http://openbox.org/wiki/Main_Page)
   - Configuration tool: [ObConf](http://openbox.org/wiki/ObConf:About)
@@ -23,3 +21,5 @@ this is my simple arch linux rice.
 * Notification daemon: [dunst](https://dunst-project.org/)
 * Keyboard layout indicator: [skb](https://plhk.ru/)
 * Compositor for X: [Compton](https://github.com/chjj/compton/)
+
+![Image alt](https://i.imgur.com/nMAT7Fy.png)
