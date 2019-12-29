@@ -6,6 +6,7 @@ This is my simple Arch Linux rice.
 * WM: [Openbox](http://openbox.org/wiki/Main_Page)
   - Configuration tool: [ObConf](http://openbox.org/wiki/ObConf:About)
   - Menu editor: [ObMenu](http://obmenu.sourceforge.net/)
+
 ![Image alt](https://i.imgur.com/wlajHbi.png)
 
 * Taskbar: [Tint2](https://gitlab.com/o9000/tint2)
@@ -16,6 +17,7 @@ This is my simple Arch Linux rice.
 * Text editor: [vim](https://www.vim.org/)
 * Audio player: [MPD](https://www.musicpd.org/) + [ncmpcpp](https://rybczak.net/ncmpcpp/)
   - Notifications for MPD: [mpd-notification](https://github.com/eworm-de/mpd-notification)
+
 ![Image alt](https://i.imgur.com/YuT0ErQ.png)
 
 * Image viewer: [feh](https://feh.finalrewind.org/)
