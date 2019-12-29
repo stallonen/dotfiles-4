@@ -16,6 +16,8 @@ This is my simple Arch Linux rice.
   - Notifications for MPD: [mpd-notification](https://github.com/eworm-de/mpd-notification)
 * Image viewer: [feh](https://feh.finalrewind.org/)
 * App launcher: [rofi](https://github.com/davatorium/rofi/)
+![Image alt](https://i.imgur.com/HpGF7Vu.png)
+
 * Screen locker: [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen)
 * Screenshot tool: [scrot](http://freshmeat.sourceforge.net/projects/scrot)
 * Volume control: [PNMixer](https://github.com/nicklan/pnmixer)
