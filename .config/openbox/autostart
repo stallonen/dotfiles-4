@@ -12,5 +12,6 @@ compton --config ~/.config/compton.conf -b &
 pnmixer &
 skb &
 #xscreensaver -no-splash &
-feh --bg-fill /home/ma/pics/john-price-UdgvzNom0Xs-unsplash.jpg &
-mpd-notification &
+#feh --bg-fill /home/ma/pics/john-price-UdgvzNom0Xs-unsplash.jpg &
+feh -z --bg-fill ~/pics/wallpapers/ &
+mpd-notification.sh &

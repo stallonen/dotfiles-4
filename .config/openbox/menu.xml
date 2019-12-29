@@ -11,9 +11,9 @@
 				<execute>urxvt -e nano</execute>
 			</action>
 		</item>
-		<item label="sublime text">
+		<item label="atom">
 			<action name="Execute">
-				<execute>subl3</execute>
+				<execute>atom</execute>
 			</action>
 		</item>
 		<item label="leafpad">
@@ -101,6 +101,23 @@
 				</item>
 			</menu>
 			<menu id="root-menu-502523-172611" label="openbox">
+				<menu id="root-menu-502523-172611-38414" label="config files">
+					<item label="autostart">
+						<action name="Execute">
+							<execute>urxvt -e vim ~/.config/openbox/autostart</execute>
+						</action>
+					</item>
+					<item label="menu.xml">
+						<action name="Execute">
+							<execute>urxvt -e vim ~/.config/openbox/menu.xml</execute>
+						</action>
+					</item>
+					<item label="rc.xml">
+						<action name="Execute">
+							<execute>urxvt -e vim ~/.config/openbox/rc.xml</execute>
+						</action>
+					</item>
+				</menu>
 				<item label="openbox conf manager">
 					<action name="Execute">
 						<execute>obconf</execute>

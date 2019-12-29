@@ -86,7 +86,7 @@
 
     ### Text ###
 
-    font = Noto Sans Bold 8
+    font = Noto Sans Bold 9
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -149,7 +149,7 @@
     ignore_newline = no
 
     # Stack together notifications with the same content
-    stack_duplicates = true
+    stack_duplicates = false
 
     # Hide the count of stacked notifications with the same content
     hide_duplicate_count = false
@@ -324,6 +324,15 @@
 #
 # Shell-like globbing will get expanded.
 #
+
+[mpd-notification]
+    appname = mpd-notification
+    background = "#1E2124"
+    format = "%b"
+    urgency = normal
+    
+#timeout = 30
+
 # Instead of the appname filter, it's recommended to use the desktop_entry filter.
 # GLib based applications export their desktop-entry name. In comparison to the appname,
 # the desktop-entry won't get localized.
