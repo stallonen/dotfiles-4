@@ -1,7 +1,7 @@
 Hello!
 This is my simple Arch Linux rice.
 
-![Image alt](https://i.imgur.com/nMAT7Fy.png)
+![Image alt](https://i.imgur.com/N4Sd0xt.png)
 
 * WM: [Openbox](http://openbox.org/wiki/Main_Page)
   - Configuration tool: [ObConf](http://openbox.org/wiki/ObConf:About)
