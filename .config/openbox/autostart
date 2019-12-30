@@ -15,3 +15,5 @@ skb &
 #feh --bg-fill /home/ma/pics/john-price-UdgvzNom0Xs-unsplash.jpg &
 feh -z --bg-fill ~/pics/wallpapers/ &
 mpd-notification.sh &
+weather-notification.sh &
+#xautolock -time 10 -locker "betterlockscreen -l" &

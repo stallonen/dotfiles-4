@@ -120,7 +120,7 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>4</number>
+    <number>2</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>I</name>
@@ -128,7 +128,7 @@
       <name>III</name>
       <name>IV</name>
     </names>
-    <popupTime>875</popupTime>
+    <popupTime>675</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
        desktops.  Set this to 0 to disable the popup. -->
   </desktops>
@@ -337,8 +337,7 @@
         <command>mpc next</command>
       </action>
     </keybind>
-<!-- Keybindings for mpc control -->
-
+    <!-- Keybindings for mpc control -->
     <keybind key="A-t">
       <action name="Execute">
         <command>urxvt</command>
@@ -382,6 +381,11 @@
     <keybind key="A-r">
       <action name="Execute">
         <command>rofi -show run</command>
+      </action>
+    </keybind>
+    <keybind key="A-C-l">
+      <action name="Execute">
+        <command>systemctl suspend</command>
       </action>
     </keybind>
     <keybind key="A-l">
@@ -864,7 +868,6 @@
         <y>15</y>
       </position>
     </application>
-
     <application class="*">
       <decor>no</decor>
     </application>
