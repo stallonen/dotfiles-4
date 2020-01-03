@@ -42,8 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>ma</name>
-    <titleLayout>LC</titleLayout>
+    <name>leaden</name>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -110,6 +109,7 @@
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
+    <titleLayout>LIMC</titleLayout>
   </theme>
   <desktops>
     <!-- this stuff is only used at startup, pagers allow you to change them
@@ -365,7 +365,7 @@
     </keybind>
     <keybind key="A-i">
       <action name="Execute">
-        <command>urxvt -hold -geometry 25x17 -e neofetch --off -tiitle neofetch</command>
+        <command>urxvt -hold -geometry 25x17 -e neofetch --off -title neofetch</command>
       </action>
     </keybind>
     <keybind key="A-n">
@@ -868,7 +868,7 @@
         <y>15</y>
       </position>
     </application>
-    <application class="*">
+    <application title="*">
       <decor>no</decor>
     </application>
   </applications>

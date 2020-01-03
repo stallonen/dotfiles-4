@@ -11,7 +11,7 @@
 !
 !Layout
 
-rofi.width: 1680
+rofi.width: 380
 
 rofi.location: 0
 
@@ -21,9 +21,9 @@ rofi.location: 0
 
 !rofi.fullscreen: true
 
-rofi.padding: 750
+rofi.padding: 650
 
-rofi.lines: 5
+rofi.lines: 8
 
 rofi.columns: 1
 
@@ -31,11 +31,11 @@ rofi.line-margin: 3
 
 rofi.line-padding: 3
 
-rofi.font: Noto Sans Bold 10
+rofi.font: Noto Sans Bold 11
 
 rofi.hide-scrollbar: true
 
-rofi.color-enabled: true
+rofi.color-enabled: false
 
 !                 'background','border','separator'
 

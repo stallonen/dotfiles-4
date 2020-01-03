@@ -1,3 +1,3 @@
 #!/bin/bash
 
-feh -z --bg-fill ~/pics/wallpapers/
+feh -z --bg-fill ~/your_dir

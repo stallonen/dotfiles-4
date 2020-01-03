@@ -6,7 +6,7 @@
 
 setxkbmap -model pc105 -layout us,ru,ua -option grp:alt_shift_toggle &
 dunst &
-nm-applet &
+#nm-applet &
 mpd &
 compton --config ~/.config/compton.conf -b &
 pnmixer &

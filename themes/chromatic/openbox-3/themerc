@@ -1,0 +1,62 @@
+#openbox themerc edited with obtheme
+border.width: 4
+menu.items.active.bg: Solid Flat
+menu.items.active.bg.color: #FF6666
+menu.items.active.disabled.text.color: #A9A9A9
+menu.items.active.text.color: #000000
+menu.items.bg: flat solid
+menu.items.bg.color: #262626
+menu.items.disabled.text.color: #646b80
+menu.items.font: shadow=n
+menu.items.text.color: #ffffff
+menu.overlap: 0
+menu.overlap.x: -7
+menu.overlap.y: 0
+menu.separator.color: #444444
+menu.separator.padding.height: 3
+menu.title.bg: flat solid
+menu.title.bg.color: #2f343f
+menu.title.bg.colorTo: #4d6982
+menu.title.text.color: #c3c9d9
+menu.title.text.justify: center
+osd.bg: Solid Flat
+osd.bg.color: #181B1E
+osd.hilight.bg: Solid Flat
+osd.hilight.bg.color: #FF6666
+osd.label.bg: ParentRelative Flat
+osd.label.text.color: #FFFFFF
+osd.label.text.font: no shadow
+osd.unhilight.bg: Solid Flat
+osd.unhilight.bg.color: #181B1E
+padding.height: 4
+padding.width: 2
+window.active.border.color: #ff6666
+window.active.button.disabled.bg: ParentRelative Flat
+window.active.button.disabled.image.color: #404552
+window.active.button.hover.image.color: #cc575d
+window.active.button.pressed.bg: parentrelative
+window.active.button.unpressed.bg: parentrelative
+window.active.button.unpressed.image.color: #c3c9d9
+window.active.client.color: #FFFFFF
+window.active.grip.bg: Solid Flat
+window.active.grip.bg.color: #000000
+window.active.label.bg: parentrelative
+window.active.label.text.color: #ffffff
+window.active.title.bg: flat solid
+window.active.title.bg.color: #ff6666
+window.active.title.separator.color: #FF6666
+window.client.padding.width: 0
+window.handle.width: 0
+window.inactive.border.color: #99c2ff
+window.inactive.button.disabled.bg: parentrelative
+window.inactive.button.disabled.image.color: #2f343f
+window.inactive.button.hover.image.color: #cc575d
+window.inactive.button.pressed.bg: parentrelative
+window.inactive.button.unpressed.bg: parentrelative
+window.inactive.button.unpressed.image.color: #646b80
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #ffffff
+window.inactive.title.bg: flat solid
+window.inactive.title.bg.color: #99c2ff
+window.inactive.title.separator.color: #99C2FF
+window.label.text.justify: center

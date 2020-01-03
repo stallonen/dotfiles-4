@@ -11,14 +11,14 @@
 				<execute>urxvt -e nano</execute>
 			</action>
 		</item>
-		<item label="atom">
-			<action name="Execute">
-				<execute>atom</execute>
-			</action>
-		</item>
 		<item label="leafpad">
 			<action name="Execute">
 				<execute>leafpad</execute>
+			</action>
+		</item>
+		<item label="sublime text">
+			<action name="Execute">
+				<execute>subl3</execute>
 			</action>
 		</item>
 	</menu>
@@ -88,11 +88,18 @@
 		<menu id="apps-fileman-menu"/>
 		<menu id="system-menu"/>
 		<menu id="root-menu-502523" label="settings">
-			<item label="customize">
-				<action name="Execute">
-					<execute>lxappearance</execute>
-				</action>
-			</item>
+			<menu id="root-menu-502523-865149" label="customize">
+				<item label="lxappearance">
+					<action name="Execute">
+						<execute>lxappearance</execute>
+					</action>
+				</item>
+				<item label="theme changer">
+					<action name="Execute">
+						<execute>~/scripts/theme_changer_dmenu.sh</execute>
+					</action>
+				</item>
+			</menu>
 			<menu id="root-menu-502523-89294" label="tint2">
 				<item label="tint2 config">
 					<action name="Execute">
@@ -118,9 +125,14 @@
 						</action>
 					</item>
 				</menu>
-				<item label="openbox conf manager">
+				<item label="config manager">
 					<action name="Execute">
 						<execute>obconf</execute>
+					</action>
+				</item>
+				<item label="themes configurer">
+					<action name="Execute">
+						<execute>obtheme</execute>
 					</action>
 				</item>
 				<item label="menu setting">
@@ -149,6 +161,11 @@
 			</item>
 			<item label="log out">
 				<action name="Exit"/>
+			</item>
+			<item label="lock">
+				<action name="Execute">
+					<execute>betterlockscreen -l</execute>
+				</action>
 			</item>
 		</menu>
 	</menu>
