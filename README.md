@@ -1,6 +1,6 @@
 This is my simple Arch Linux rice.
 
-![Image alt](https://i.imgur.com/VTsapO2.png)
+![Image alt](https://i.imgur.com/UgKdxgm.png)
 
 ![Image alt](https://i.imgur.com/iXzg1LD.png)
 
