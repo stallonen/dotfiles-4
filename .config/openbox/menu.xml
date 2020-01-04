@@ -76,6 +76,11 @@
 				</startupnotify>
 			</action>
 		</item>
+		<item label="inkscape">
+			<action name="Execute">
+				<execute>inkscape</execute>
+			</action>
+		</item>
 	</menu>
 	<menu id="root-menu" label="Openbox 3">
 		<menu id="apps-accessories-menu"/>
@@ -159,7 +164,7 @@
 					<execute>systemctl reboot</execute>
 				</action>
 			</item>
-			<item label="log out">
+			<item label="logout">
 				<action name="Exit"/>
 			</item>
 			<item label="lock">
