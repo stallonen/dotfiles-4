@@ -8,6 +8,8 @@
 
 ![Image alt](https://i.imgur.com/UgKdxgm.png)
 
+### List of applications
+
 * WM:
   - [bspwm](https://github.com/baskerville/bspwm)
     - Hotkey daemon: [sxhkd](https://github.com/baskerville/sxhkd)
