@@ -15,10 +15,9 @@
     - Hotkey daemon: [sxhkd](https://github.com/baskerville/sxhkd)
     - Status bar: [Polybar](https://github.com/polybar/polybar)
   - [Openbox](http://openbox.org/wiki/Main_Page)
-* Openbox configuration tools:
-  - Configuration tool: [ObConf](http://openbox.org/wiki/ObConf:About)
-  - Menu editor: [ObMenu](http://obmenu.sourceforge.net/)
-  - Theme editor: [ObTheme](https://xyne.archlinux.ca/projects/obtheme/) 
+    - Configuration tool: [ObConf](http://openbox.org/wiki/ObConf:About)
+    - Menu editor: [ObMenu](http://obmenu.sourceforge.net/)
+    - Theme editor: [ObTheme](https://xyne.archlinux.ca/projects/obtheme/) 
 * Taskbar: [Tint2](https://gitlab.com/o9000/tint2)
 * Terminal: [urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html)
 * File managers: [PCManFM](https://wiki.lxde.org/en/PCManFM) and [ranger](https://ranger.github.io/)
