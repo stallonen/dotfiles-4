@@ -1,4 +1,4 @@
-## My simple [Arch Linux](https://www.archlinux.org/) rice.
+## My simple [Arch Linux](https://www.archlinux.org/) rice
 
 **bspwm:**
 
