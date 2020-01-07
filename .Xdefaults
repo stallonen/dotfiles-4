@@ -1,14 +1,12 @@
-!
-!
 !__   __   _       __            _ _       
 !\ \ / /  | |     / _|          | | |      
 ! \ V / __| | ___| |_ __ _ _   _| | |_ ___ 
 !  > < / _` |/ _ \  _/ _` | | | | | __/ __|
 ! / . \ (_| |  __/ || (_| | |_| | | |_\__ \
 !/_/ \_\__,_|\___|_| \__,_|\__,_|_|\__|___/
-!                                          
-!                                          
-!
+!                                                                                    
+
+
 !Перечитать файл и применить настройки
 !(при наличии ошибок выведет отчёт):
 !xrdb -load ~/.Xdefaults
@@ -19,7 +17,6 @@
 
 ! Для использования добавить в $HOME/.Xdefaults строку:
 !#include ".rxvtrc"
-
 
 !=== ВИЗУАЛЬНЫЕ НАСТРОЙКИ ===
 ! Настройки цветовой схемы
@@ -62,13 +59,13 @@
 
 URxvt.internalBorder:  20
 
-!URxvt*font: xft:sfmono:size=9
-!URxvt*font: xft:mononoki:size=10
-!URxvt*font: xft:source code pro:size=9
-!URxvt*font: xft:iosevka:size=10
 URxvt*font: xft:xos4 Terminus:size=8
+!URxvt.font: -*-rissole-*
+!URxvt.boldFont: -*-rissole-*
+!URxvt.italicFont: -*-rissole-*
+!URxvt.boldItalicfont: -*-rissole-*
 
-!URxvt.letterSpace: -1
+!URxvt.letterSpace: -0.5
 
 URxvt.secondaryWheel: 1
 
@@ -79,25 +76,8 @@ URxvt.cursorBlink:      true
 ! Цвет текста, находящегося под курсором
 URxvt.cursorColor2:     red
 
-! Псевдопрозрачность - в кач-ве фона
-! поставить обои рабочего стола
-!URxvt*transparent:     true
-! Яркость прозрачного фона (-100 .. 100)
-!URxvt*shading:         40
-! Та же псевдопрозрачность, без настройки яркости
-!URxvt.inheritPixmap:     true
-! Цвет окрашивания прозрачного фона
-!URxvt*tintColor:       blue
-
 ! Иконка окна терминала
 !URxvt*iconFile: /usr/share/pixmaps/gnome-terminal.xpm
-
-! Настройки шрифтов
-! URxvt*font:-xos4-terminus-medium-r-normal--14-*-*-*-*-*-u
-! Горячие клавиши для изменения размера шрифта "на лету"
-! (Ctrl-1 - норма, Ctrl-2 - увеличить до 24)
-! URxvt.keysym.C-1: command:\033]710;-xos4-terminus-medium-r-normal--14-*-*-*-*-*-u\007\033]711;-xos4-terminus-bold-r-normal--14-*-*-*-*-*-u\007
-! URxvt.keysym.C-2: command:\033]710;-xos4-terminus-medium-r-normal--24-*-*-*-*-*-u\007\033]711;-xos4-terminus-bold-r-normal--22-*-*-*-*-*-u\007
 
 ! Цвета в man-страницах
 URxvt.colorMode:         on
@@ -117,7 +97,6 @@ URxvt*scrollstyle:      rxvt
 ! (иначе - как перемещения курсора)
 URxvt.pastableTabs:     true
 
-
 !=== НАСТРОЙКИ ОБРАБОТКИ ССЫЛОК ===
 ! Внешняя программа для открытия ссылок
 URxvt.urlLauncher:      chromium
@@ -132,29 +111,12 @@ URxvt.colorUL:          #86a2be
 URxvt.underlineURLs:    true
 !URxvt.underlineColor:   yellow
 
-
 !=== НАСТРОЙКИ ФУНКЦИОНАЛА ===
 ! Сколько строк хранить в памяти
 URxvt*saveLines:        5000
-! Настройки табов
-URxvt.tabbed.new-button:    no
-URxvt.tabbed.tabbar-fg:     15
-URxvt.tabbed.tabbar-bg:     0
-URxvt.tabbed.tab-fg:        0
-URxvt.tabbed.tab-bg:        14
+
 ! Оболочка
 URxvt.geometry:         87x28
 URxvt.loginShell:       false
 URxvt.meta:             ignore
 URxvt.utmpInhibit:      true
-
-
-!=== НАСТРОЙКИ РАСШИРЕНИЙ ===
-! Путь для поиска пользовательских расширений
-! URxvt.perl-lib:         $HOME/.config/urxvt/perl/
-! Загружаемые по умолчанию расширения
-! Основные; расширенные табы (без кнопки NEW, можно устанавливать
-! заголовок окна: https://github.com/stepb/urxvt-tabbedex);
-! регэкспы для выделения ссылок в тексте; выбор ссылок горячими
-! клавишами); копирование в буфер обмена
-!URxvt.perl-ext-common:  default,tabbedex,matcher,url-select,clipboard-osc

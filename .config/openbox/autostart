@@ -1,19 +1,21 @@
 #
 # These things are run when an Openbox X Session is started.
-# You may place a similar script in $HOME/.config/openbox/autostart
-# to run user-specific things.
 #
 
 setxkbmap -model pc105 -layout us,ru,ua -option grp:alt_shift_toggle &
-dunst &
-#nm-applet &
-mpd &
+
+caffeine &
 compton --config ~/.config/compton.conf -b &
+dunst &
+feh -z --bg-fill ~/pics/wallpapers/ &
+mpd &
+mpd-notification.sh &
+nm-applet &
 pnmixer &
 skb &
+tint2 &
+startup-notification.sh &
+xautolock -time 10 -locker "betterlockscreen -l" &
+
 #xscreensaver -no-splash &
 #feh --bg-fill /home/ma/pics/john-price-UdgvzNom0Xs-unsplash.jpg &
-feh -z --bg-fill ~/pics/wallpapers/ &
-mpd-notification.sh &
-weather-notification.sh &
-#xautolock -time 10 -locker "betterlockscreen -l" &

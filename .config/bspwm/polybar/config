@@ -23,9 +23,9 @@ background-alt = #22262a
 ;foreground = ${xrdb:color7:#222}
 foreground = #ffffff
 foreground-alt = #8e9aa4
-primary = #f2f2f2
+primary = #ff0000
 secondary = #fcedc5
-alert = #fcedc5
+alert = #ff6666
 
 [bar/main]
 ;monitor = ${env:MONITOR:HDMI-1}
@@ -39,7 +39,7 @@ fixed-center = true
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 1
+line-size = 0
 line-color = #f00
 
 border-size = 2
@@ -51,18 +51,18 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = dina:pixelsize=10;2
+font-0 = xos4 Terminus:pixelsize=10;2
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;2
 font-2 = siji:pixelsize=10;2
 font-3 = FontAwesome 5 Free:size=10:style=Solid;2
-font-4 = Material Icons:style=Regular
-font-5 = Weather Icons:size=12;2
+font-4 = Material Icons:style=Regular;2
+font-5 = Weather Icons:size=12;3
 font-6 = Font Awesome 5 Brands:pixelsize=10;2
 font-7 = Font Awesome 5 Free:pixelsize=10;2
 
-modules-left = menu bspwm xwindow
-modules-center = mpd
-modules-right = openweathermap-fullfeatured pulseaudio skb date
+modules-left = menu spotify mpd
+modules-center = bspwm
+modules-right = openweathermap pulseaudio skb date
 
 tray-position = right
 tray-padding = 2
@@ -82,86 +82,8 @@ override-redirect = true
 cursor-click = pointer
 cursor-scroll = ns-resize
 
-[module/poweroff]
-type = custom/script
-exec = echo ""
-click-left = "~/scripts/power.sh"
 
-[module/openweathermap-fullfeatured]
-type = custom/script
-exec = /home/ma/scripts/polybar/openweathermap-fullfeatured.sh
-interval = 600
-label-font = 6
-
-[module/skb]
-type = custom/script
-exec = skb
-tail = true
-interval = 0.5
-
-[module/wttr]
-type = custom/script
-exec = /home/ma/scripts/polybar/polybar-weather.sh
-tail = true
-interval = 600
-click-left = /home/ma/scripts/weather.sh
-
-[module/menu]
-type = custom/menu
-format-spacing = 1
-label-separator = |
-format = <label-toggle><menu>
-label-open = "   |"
-label-close = ""
-menu-0-0 = "Browsers"
-menu-0-0-exec = menu-open-1
-menu-0-1 = "Chats"
-menu-0-1-exec = menu-open-2
-menu-0-2 = "Edit"
-menu-0-2-exec = menu-open-4
-menu-0-3 = "Power"
-menu-0-3-exec = menu-open-3
-
-menu-1-0 = "Chromium"
-menu-1-0-exec = chromium &
-menu-1-1 = "Firefox"
-menu-1-1-exec = firefox &
-menu-2-0 = "Telegram"
-menu-2-0-exec = telegram-desktop &
- 
-menu-3-0 = "Shutdown"
-menu-3-0-exec = systemctl poweroff
-menu-3-1 = "Restart"
-menu-3-1-exec = ssystemctl restart
-menu-3-2 = "Lock"
-menu-3-2-exec = betterlockscreen -l
-menu-3-3 = "Exit"
-menu-3-3-exec = bspc quit
-
-menu-4-0 = "VIM"
-menu-4-0-exec = urxvt -e vim &
-menu-4-1 = "Micro"
-menu-4-1-exec = urxvt -e micro &
-menu-4-2 = "Sublime Text"
-menu-4-2-exec = subl3 &
-
-[module/xwindow]
-format = <label>
-type = internal/xwindow
-label = %title:0:45:...%
-format-foreground = #b8bfc6
-
-[module/xkeyboard]
-label-layout = %layout%
-type = internal/xkeyboard
-blacklist-0 = num lock
-
-format-prefix-foreground = ${colors.foreground-alt}
-
-label-indicator-padding = 0
-label-indicator-margin = 0
-label-indicator-background = ${colors.secondary}
-
+; Active modules
 
 [module/bspwm]
 type = internal/bspwm
@@ -175,11 +97,13 @@ ws-icon-5 = other;
 ws-icon-default = 
 
 label-focused = %icon%
+label-focused-foreground = #ffffff
 label-focused-background = ${colors.background-alt}
 label-focused-underline= ${colors.primary}
 label-focused-padding = 1
 
 label-occupied = %icon%
+label-occupied-foreground = #aab3bb
 label-occupied-padding = 1
 
 label-urgent = %icon%
@@ -187,7 +111,7 @@ label-urgent-background = ${colors.alert}
 label-urgent-padding = 1
 
 label-empty = %icon%
-label-empty-foreground = ${colors.foreground-alt}
+label-empty-foreground = #4f5a63
 label-empty-padding = 1
 
 ; Separator in between workspaces
@@ -195,15 +119,59 @@ label-empty-padding = 1
 ;label-separator-padding = 2
 ;label-separator-foreground = #ffb52a
 
+[module/menu]
+type = custom/menu
+format-spacing = 1
+label-separator = |
+format = <label-toggle><menu>
+label-open = ""
+label-close = ""
+menu-0-0 = "Browsers"
+menu-0-0-exec = menu-open-1
+menu-0-1 = "Chats"
+menu-0-1-exec = menu-open-2
+menu-0-2 = "Edit"
+menu-0-2-exec = menu-open-3
+menu-0-3 = "Media"
+menu-0-3-exec = menu-open-4
+menu-0-4 = "Power"
+menu-0-4-exec = ~/scripts/power.sh
+
+menu-1-0 = "Chromium"
+menu-1-0-exec = chromium &
+menu-1-1 = "Firefox"
+menu-1-1-exec = firefox &
+
+menu-2-0 = "Telegram"
+menu-2-0-exec = telegram-desktop &
+
+menu-3-0 = "VIM"
+menu-3-0-exec = urxvt -e vim &
+menu-3-1 = "Micro"
+menu-3-1-exec = urxvt -e micro &
+menu-3-2 = "Sublime Text"
+menu-3-2-exec = subl3 &
+
+menu-4-0 = "Spotify"
+menu-4-0-exec = spotify &
+menu-4-1 = "ncmpcpp"
+menu-4-1-exec = urxvt -e ncmpcpp &
+
+[module/spotify]
+type = custom/script
+interval = 1
+format = <label>
+exec = python /home/ma/scripts/polybar/spotify_status.py -f '|  {artist} - {song}'
+
 [module/mpd]
 type = internal/mpd
-format-online =  <label-song> | <icon-prev> <icon-stop><toggle> <icon-next>
-format-offline = <label-offline>
+format-online =  <label-song>
+;format-offline = <label-offline>
 label-offline = mpd is offline
 
 interval = 1
 
-label-song =  %artist% - %title%
+label-song =  |  %artist% - %title%
 label-song-maxlen = 35
 label-song-ellipsis = true
 
@@ -221,6 +189,18 @@ bar-progress-width = 10
 bar-progress-indicator = >
 bar-progress-fill = ─
 bar-progress-empty = ─
+
+[module/openweathermap]
+type = custom/script
+exec = /home/ma/scripts/polybar/openweathermap-simple.sh
+interval = 600
+label-font = 6
+
+[module/skb]
+type = custom/script
+exec = skb
+tail = true
+interval = 0.5
 
 [module/date]
 type = internal/date
@@ -244,6 +224,39 @@ label-volume-foreground = ${root.foreground}
 
 label-muted = muted
 label-muted-foreground = #666
+
+
+; Inactive modules
+
+[module/poweroff]
+type = custom/script
+exec = echo ""
+click-left = "~/scripts/power.sh"
+
+[module/clipboard]
+type = custom/script
+exec = echo ""
+click-left = "~/scripts/clipboard.sh"
+
+[module/xwindow]
+format = <label>
+type = internal/xwindow
+label = %title:0:45:...%
+format-foreground = #b8bfc6
+
+[module/xkeyboard]
+label-layout = %layout%
+type = internal/xkeyboard
+blacklist-0 = num lock
+
+format-prefix-foreground = ${colors.foreground-alt}
+
+label-indicator-padding = 0
+label-indicator-margin = 0
+label-indicator-background = ${colors.secondary}
+
+
+; Other
 
 [settings]
 screenchange-reload = true

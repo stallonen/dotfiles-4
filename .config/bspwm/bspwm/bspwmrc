@@ -1,10 +1,14 @@
 #! /bin/bash
 
-sxhkd &
+caffeine &
+compton --config ~/.config/compton.conf -b &
+dunst -conf ~/.config/dunst/bspwm-dunstrc &
+feh -z --bg-fill ~/pics/wallpapers/ &
 /home/ma/.config/polybar/launch.sh &
 setxkbmap -model pc105 -layout us,ru,ua -option grp:alt_shift_toggle &
-compton --config ~/.config/compton.conf -b &
-feh -z --bg-fill ~/pics/wallpapers/ &
+systemctl --user --now start greenclip.service &
+sxhkd &
+xautolock -time 10 -locker "betterlockscreen -l" &
 
 bspc monitor -d web code media edit graphics other
 
@@ -26,15 +30,17 @@ bspc config split_ratio          0.50
 bspc config gapless_monocle      false
 bspc config click_to_focus       true
 
+bspc config external_rules_command "$(which /home/ma/.config/bspwm/bspwm-rules)"
+
 bspc rule -a Chromium desktop="web"
-bspc rule -a TelegramDesktop desktop="web"
-bspc rule -a Subl3 desktop="code"
-bspc rule -a URxvt desktop='code' state=floating
-bspc rule -a mpv desktop="media"
+bspc rule -a TelegramDesktop desktop="web" follow=off
+bspc rule -a Subl3 desktop="code" follow=off
+bspc rule -a mpv desktop="media" state=floating follow=on
 bspc rule -a Gimp desktop="graphics" follow=on
+bspc rule -a Transmission-gtk desktop="other" state=floating follow=off
 
+bspc rule -a Xarchiver state=floating
+bspc rule -a Leafpad state=floating
+bspc rule -a Pcmanfm state=floating focus=on
+bspc rule -a URxvt state=floating
 bspc rule -a feh state=floating
-
-#bspc rule -a mplayer2 state=floating
-#bspc rule -a Kupfer.py focus=on
-#bspc rule -a Screenkey manage=off

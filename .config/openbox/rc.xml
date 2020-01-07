@@ -316,28 +316,43 @@
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
-    <!-- Keybindings for mpc control -->
-    <keybind key="S-XF86AudioPlay">
+    <!-- Keybindings for mpc control and Spotify -->
+    <keybind key="S-A-XF86AudioPlay">
       <action name="Execute">
         <command>mpc pause</command>
       </action>
     </keybind>
-    <keybind key="XF86AudioPlay">
+    <keybind key="A-XF86AudioPlay">
       <action name="Execute">
         <command>mpc play</command>
       </action>
     </keybind>
-    <keybind key="XF86AudioPrev">
+    <keybind key="A-XF86AudioPrev">
       <action name="Execute">
         <command>mpc prev</command>
       </action>
     </keybind>
-    <keybind key="XF86AudioNext">
+    <keybind key="A-XF86AudioNext">
       <action name="Execute">
         <command>mpc next</command>
       </action>
     </keybind>
-    <!-- Keybindings for mpc control -->
+	<keybind key="XF86AudioPlay">
+      <action name="Execute">
+        <command>dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause</command>
+      </action>
+    </keybind>
+    <keybind key="A-XF86AudioPrev">
+      <action name="Execute">
+        <command>dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous</command>
+      </action>
+    </keybind>
+    <keybind key="A-XF86AudioNext">
+      <action name="Execute">
+        <command>dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next</command>
+      </action>
+    </keybind>
+    <!-- Keybindings for mpc control and Spotify-->
     <keybind key="A-t">
       <action name="Execute">
         <command>urxvt</command>

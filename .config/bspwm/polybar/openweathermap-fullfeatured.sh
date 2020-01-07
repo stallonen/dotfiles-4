@@ -35,8 +35,8 @@ get_duration() {
 
 }
 
-KEY="c6f1bfea0cd2955386c836c066ea2b44"
-CITY="Voznesensk"
+KEY=" "
+CITY=" "
 UNITS="metric"
 SYMBOL="°"
 
