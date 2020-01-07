@@ -8,7 +8,7 @@
 
 ![Image alt](https://i.imgur.com/UgKdxgm.png)
 
-### List of applications
+### List of applications:
 
 * WM:
   - [bspwm](https://github.com/baskerville/bspwm)
