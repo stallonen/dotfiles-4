@@ -1,12 +1,16 @@
-This is my simple Arch Linux rice.
+My simple Arch Linux rice.
 
-bspwm
+bspwm:
+
 ![Image alt](https://i.imgur.com/4VZ6lTn.png)
 
-Openbox
+Openbox:
+
 ![Image alt](https://i.imgur.com/UgKdxgm.png)
 
-* WM: [Openbox](http://openbox.org/wiki/Main_Page) and [bspwm](https://github.com/baskerville/bspwm)
+* WM:
+  - [bspwm](https://github.com/baskerville/bspwm)
+  - [Openbox](http://openbox.org/wiki/Main_Page)
 * Openbox configuration tools:
   - Configuration tool: [ObConf](http://openbox.org/wiki/ObConf:About)
   - Menu editor: [ObMenu](http://obmenu.sourceforge.net/)
@@ -17,8 +21,9 @@ Openbox
 * Browser: [Chromium](https://www.chromium.org/)
 * Network manager: [Network Manager](https://wiki.gnome.org/Projects/NetworkManager/)
 * Text editor: [vim](https://www.vim.org/)
-* Audio player: [MPD](https://www.musicpd.org/) + [ncmpcpp](https://rybczak.net/ncmpcpp/)
-  - Notifications for MPD: [mpd-notification](https://github.com/eworm-de/mpd-notification)
+* Audio player:
+  - [MPD](https://www.musicpd.org/) + [ncmpcpp](https://rybczak.net/ncmpcpp/)
+    - Notifications for MPD: [mpd-notification](https://github.com/eworm-de/mpd-notification)
 * Image viewer: [feh](https://feh.finalrewind.org/)
 * App launcher: [rofi](https://github.com/davatorium/rofi/)
 * Screen locker: [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen)
