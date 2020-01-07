@@ -7,7 +7,7 @@ Openbox
 ![Image alt](https://i.imgur.com/UgKdxgm.png)
 
 * WM: 
--[Openbox](http://openbox.org/wiki/Main_Page)
+№ [Openbox](http://openbox.org/wiki/Main_Page)
   - Configuration tool: [ObConf](http://openbox.org/wiki/ObConf:About)
   - Menu editor: [ObMenu](http://obmenu.sourceforge.net/)
   - Theme editor: [ObTheme](https://xyne.archlinux.ca/projects/obtheme/) 
