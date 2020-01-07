@@ -1,6 +1,5 @@
 ## My simple [Arch Linux](https://www.archlinux.org/) rice
 
-
 **bspwm:**
 
 ![Image alt](https://i.imgur.com/4VZ6lTn.png)
