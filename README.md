@@ -1,7 +1,7 @@
 This is my simple Arch Linux rice.
 
 bspwm
-![Image alt](https://imgur.com/a/QoWkzVO)
+![Image alt](https://i.imgur.com/4VZ6lTn.png)
 
 Openbox
 ![Image alt](https://i.imgur.com/UgKdxgm.png)
