@@ -1,10 +1,10 @@
-My simple [Arch Linux](https://www.archlinux.org/) rice.
+## My simple [Arch Linux](https://www.archlinux.org/) rice.
 
-bspwm:
+**bspwm:
 
 ![Image alt](https://i.imgur.com/4VZ6lTn.png)
 
-Openbox:
+**Openbox:
 
 ![Image alt](https://i.imgur.com/UgKdxgm.png)
 
