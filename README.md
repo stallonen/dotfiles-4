@@ -6,8 +6,8 @@ bspwm
 Openbox
 ![Image alt](https://i.imgur.com/UgKdxgm.png)
 
-* WM:
-- [Openbox](http://openbox.org/wiki/Main_Page)
+* WM: [Openbox](http://openbox.org/wiki/Main_Page) and [bspwm](https://github.com/baskerville/bspwm)
+* Openbox configuration tools:
   - Configuration tool: [ObConf](http://openbox.org/wiki/ObConf:About)
   - Menu editor: [ObMenu](http://obmenu.sourceforge.net/)
   - Theme editor: [ObTheme](https://xyne.archlinux.ca/projects/obtheme/) 
