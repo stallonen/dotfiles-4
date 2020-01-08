@@ -2,7 +2,7 @@
 
 **bspwm:**
 
-![Image alt](https://i.imgur.com/4VZ6lTn.png)
+![Image alt](https://i.imgur.com/XqUOwCr.png)
 
 **Openbox:**
 
