@@ -30,6 +30,7 @@
     - Notifications for MPD: [mpd-notification](https://github.com/eworm-de/mpd-notification)
 * Image viewer: [feh](https://feh.finalrewind.org/)
 * Application launcher: [rofi](https://github.com/davatorium/rofi/)
+* AUR helper: [Yay](https://github.com/Jguer/yay)
 * Screen locker: [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen)
 * Screenshot tool: [scrot](http://freshmeat.sourceforge.net/projects/scrot)
 * Volume control: [PNMixer](https://github.com/nicklan/pnmixer)
