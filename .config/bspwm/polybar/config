@@ -56,11 +56,11 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;2
 font-2 = siji:pixelsize=10;2
 font-3 = FontAwesome 5 Free:size=10:style=Solid;2
 font-4 = Material Icons:style=Regular;2
-font-5 = Weather Icons:size=12;3
+font-5 = Weather Icons:size=10;4
 font-6 = Font Awesome 5 Brands:pixelsize=10;2
 font-7 = Font Awesome 5 Free:pixelsize=10;2
 
-modules-left = menu spotify mpd
+modules-left = menu spotify_status mpd
 modules-center = bspwm
 modules-right = openweathermap pulseaudio skb date
 
@@ -157,11 +157,11 @@ menu-4-0-exec = spotify &
 menu-4-1 = "ncmpcpp"
 menu-4-1-exec = urxvt -e ncmpcpp &
 
-[module/spotify]
+[module/spotify_status]
 type = custom/script
 interval = 1
 format = <label>
-exec = python /home/ma/scripts/polybar/spotify_status.py -f '|  {artist} - {song}'
+exec = python /home/ma/scripts/polybar/spotify_status.py -f '|  {artist} - {song}'
 
 [module/mpd]
 type = internal/mpd
@@ -201,25 +201,26 @@ type = custom/script
 exec = skb
 tail = true
 interval = 0.5
+format-prefix = " "
 
 [module/date]
 type = internal/date
 interval = 5
 
-label = %date% %time%
+label =  %time%
 
-;date = %H:%M
+;date = %d/%m
 date-alt = %A, %d/%m/%Y
 
 time = %H:%M
-;time-alt = %H:%M:%S
+time-alt = %A, %d/%m/%Y
 
 [module/pulseaudio]
 type = internal/pulseaudio
 
 ;format-volume = <label-volume> <bar-volume>
 format-volume = <label-volume>
-label-volume = vol:%percentage%%
+label-volume =  %percentage%%
 label-volume-foreground = ${root.foreground}
 
 label-muted = muted
