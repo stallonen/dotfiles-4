@@ -31,7 +31,7 @@
 * Image viewer: [feh](https://feh.finalrewind.org/)
 * Application launcher: [rofi](https://github.com/davatorium/rofi/)
 * AUR helper: [Yay](https://github.com/Jguer/yay)
-* Screen locker: [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen)
+* Screen locker: [i3lock](https://i3wm.org/i3lock/) with [simple script](https://github.com/sadparadiseinhell/dotfiles/blob/master/scripts/lock.sh)
 * Screenshot tool: [scrot](http://freshmeat.sourceforge.net/projects/scrot)
 * Volume control: [PNMixer](https://github.com/nicklan/pnmixer)
 * Notification daemon: [dunst](https://dunst-project.org/)
