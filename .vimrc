@@ -22,7 +22,6 @@ set showcmd
 
 " Font
 set encoding=utf8
-set guifont=Menlo\ for\ Powerline\ 10
 set nolazyredraw
 set smartcase
 set ignorecase

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+f<?xml version="1.0" encoding="utf-8"?>
 <openbox_menu xmlns="http://openbox.org/3.4/menu">
 	<menu id="apps-editors-menu" label="editors">
 		<item label="vim">
@@ -169,7 +169,7 @@
 			</item>
 			<item label="lock">
 				<action name="Execute">
-					<execute>betterlockscreen -l</execute>
+					<execute>~/scripts/lock.sh</execute>
 				</action>
 			</item>
 		</menu>

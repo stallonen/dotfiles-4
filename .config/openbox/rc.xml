@@ -405,7 +405,7 @@
     </keybind>
     <keybind key="A-l">
       <action name="Execute">
-        <command>betterlockscreen -l</command>
+        <command>~/scripts/lock.sh</command>
       </action>
     </keybind>
     <keybind key="A-q">

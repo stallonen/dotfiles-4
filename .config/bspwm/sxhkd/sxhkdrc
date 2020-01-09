@@ -67,7 +67,7 @@ XF86AudioMute
 
 # lockscreen
 super + shift l
-	betterlockscreen -l
+	~/scripts/lock.sh
 
 # clipboard
 super + c

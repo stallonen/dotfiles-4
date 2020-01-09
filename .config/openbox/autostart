@@ -15,7 +15,7 @@ pnmixer &
 skb &
 tint2 &
 startup-notification.sh &
-xautolock -time 10 -locker "betterlockscreen -l" &
+xautolock -time 15 -locker "~/scripts/lock.sh" &
 
 #xscreensaver -no-splash &
 #feh --bg-fill /home/ma/pics/john-price-UdgvzNom0Xs-unsplash.jpg &

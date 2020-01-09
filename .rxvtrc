@@ -1,0 +1,86 @@
+! Color theme
+! special
+*.foreground:   #c7ccd1
+*.background:   #181B1E
+*.cursorColor:  #c7ccd1
+
+! black
+*.color0:       #1c2023
+*.color8:       #747c84
+
+! red
+*.color1:       #c7ae95
+*.color9:       #c7ae95
+
+! green
+*.color2:       #95c7ae
+*.color10:      #95c7ae
+
+! yellow
+*.color3:       #aec795
+*.color11:      #aec795
+
+! blue
+*.color4:       #ae95c7
+*.color12:      #ae95c7
+
+! magenta
+*.color5:       #c795ae
+*.color13:      #c795ae
+
+! cyan
+*.color6:       #95aec7
+*.color14:      #95aec7
+
+! white
+*.color7:       #c7ccd1
+*.color15:      #f3f4f5
+
+! Window geometry 
+URxvt.geometry:         87x28
+URxvt.loginShell:       false
+URxvt.meta:             ignore
+URxvt.utmpInhibit:      true
+URxvt.internalBorder:	20
+
+! Font
+URxvt*font: xft:dina:size=8
+!URxvt*font: xft:xos4 Terminus:size=8
+URxvt.letterSpace: 0
+
+! Scrollback buffer
+URxvt.secondaryWheel: 1
+
+! Cursor blinking
+URxvt.cursorBlink:      true
+
+! Cursor color
+URxvt.cursorColor:     white
+
+! Man-pages color
+URxvt.colorMode:         on
+URxvt.boldColors:        on
+URxvt.dynamicColors:     on
+URxvt.colorULMode:       on
+URxvt.underLine:         off
+URxvt.colorBDMode:       on
+URxvt.colorBD:           cyan
+
+! Scrollbar
+URxvt*scrollBar:        false
+URxvt*scrollBar_right:  true
+URxvt*scrollstyle:      rxvt
+
+! App icon
+!URxvt.iconFile:    /usr/share/icons/hicolor/scalable/apps/Terminal.svg
+
+! Clickable URLs
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/chromium
+URxvt.matcher.button: 1
+URxvt.colorUL:          cyan
+URxvt.underlineURLs:    true
+URxvt.underlineColor:   cyan
+
+! Save number lines in the scrollback buffer
+URxvt*saveLines:        2000

@@ -8,7 +8,7 @@
 
 * {
     /* Theme settings */
-    highlight: bold underline italic;
+    highlight: bold underline;
     scrollbar: false;
 
     /* Gruvbox dark colors */
@@ -16,7 +16,7 @@
     gruvbox-dark-bg0-soft:     #181B1E;
     gruvbox-dark-bg3:          #181B1E;
     gruvbox-dark-fg0:          #ffffff;
-    gruvbox-dark-fg1:          #949494;
+    gruvbox-dark-fg1:          #999999;
     gruvbox-dark-red-dark:     #cc241d;
     gruvbox-dark-red-light:    #fb4934;
     gruvbox-dark-yellow-dark:  #d79921;
@@ -54,3 +54,4 @@
 }
 
 @import "gruvbox-common.rasi"
+

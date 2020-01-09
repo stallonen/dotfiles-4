@@ -64,9 +64,13 @@ modules-left = menu spotify_status mpd
 modules-center = bspwm
 modules-right = openweathermap pulseaudio skb date
 
-tray-position = right
-tray-padding = 2
-;tray-background = #0063ff
+tray-position = none
+tray-background = ${colors.background}
+tray-padding = 1
+tray-offset-x = 0
+tray-offset-y = 0
+tray-maxsize = 16
+tray-transparent = false
 
 wm-restack = bspwm
 ;wm-restack = i3
@@ -144,6 +148,8 @@ menu-1-1-exec = firefox &
 
 menu-2-0 = "Telegram"
 menu-2-0-exec = telegram-desktop &
+menu-2-1 = "Discord"
+menu-2-1-exec = discord &
 
 menu-3-0 = "VIM"
 menu-3-0-exec = urxvt -e vim &
