@@ -1,5 +1,9 @@
 ## My simple [Arch Linux](https://www.archlinux.org/) rice
 
+**i3-gaps:**
+
+![Image alt](https://i.imgur.com/WMrnvVX.png)
+
 **bspwm:**
 
 ![Image alt](https://i.imgur.com/XqUOwCr.png)
@@ -11,6 +15,7 @@
 ### List of applications:
 
 * WM:
+  - [i3-gaps](https://github.com/Airblader/i3)
   - [bspwm](https://github.com/baskerville/bspwm)
     - Hotkey daemon: [sxhkd](https://github.com/baskerville/sxhkd)
     - Status bar: [Polybar](https://github.com/polybar/polybar)
@@ -20,7 +25,7 @@
     - Theme editor: [ObTheme](https://xyne.archlinux.ca/projects/obtheme/) 
     - Taskbar: [Tint2](https://gitlab.com/o9000/tint2)
 * Terminal: [urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html)
-* File managers: [PCManFM](https://wiki.lxde.org/en/PCManFM) and [ranger](https://ranger.github.io/)
+* File manager: [PCManFM](https://wiki.lxde.org/en/PCManFM) and [ranger](https://ranger.github.io/)
 * Browser: [Chromium](https://www.chromium.org/)
 * Network manager: [Network Manager](https://wiki.gnome.org/Projects/NetworkManager/)
 * Text editor: [vim](https://www.vim.org/)
