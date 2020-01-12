@@ -8,7 +8,7 @@ feh -z --bg-fill ~/pics/wallpapers/ &
 setxkbmap -model pc105 -layout us,ru,ua -option grp:alt_shift_toggle &
 systemctl --user --now start greenclip.service &
 sxhkd &
-xautolock -time 15 -locker "~/scripts/lock.sh" &
+xautolock -time 10 -locker "~/scripts/lock.sh" &
 xsetroot -cursor_name left_ptr &
 
 bspc monitor -d web code media edit graphics other
@@ -38,7 +38,7 @@ bspc rule -a TelegramDesktop desktop="web" follow=off
 bspc rule -a Subl3 desktop="code" follow=off
 bspc rule -a mpv desktop="media" state=floating follow=on
 bspc rule -a Gimp desktop="graphics" follow=on
-bspc rule -a Transmission-gtk desktop="other" state=floating follow=off
+bspc rule -a Transmission-gtk desktop="other" state=floating follow=on
 bspc rule -a discord desktop="other" state=floating follow=off
 
 bspc rule -a Xarchiver state=floating

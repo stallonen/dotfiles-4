@@ -62,11 +62,11 @@ font-7 = Font Awesome 5 Free:pixelsize=10;2
 
 modules-left = menu spotify_status mpd
 modules-center = bspwm
-modules-right = openweathermap pulseaudio skb date
+modules-right = openweathermap pulseaudio skb date poweroff
 
 tray-position = none
 tray-background = ${colors.background}
-tray-padding = 1
+tray-padding = 5
 tray-offset-x = 0
 tray-offset-y = 0
 tray-maxsize = 16
@@ -153,10 +153,8 @@ menu-2-1-exec = discord &
 
 menu-3-0 = "VIM"
 menu-3-0-exec = urxvt -e vim &
-menu-3-1 = "Micro"
-menu-3-1-exec = urxvt -e micro &
-menu-3-2 = "Sublime Text"
-menu-3-2-exec = subl3 &
+menu-3-1 = "Sublime Text"
+menu-3-1-exec = subl3 &
 
 menu-4-0 = "Spotify"
 menu-4-0-exec = spotify &
@@ -232,13 +230,12 @@ label-volume-foreground = ${root.foreground}
 label-muted = muted
 label-muted-foreground = #666
 
-
-; Inactive modules
-
 [module/poweroff]
 type = custom/script
 exec = echo ""
 click-left = "~/scripts/power.sh"
+
+; Inactive modules
 
 [module/clipboard]
 type = custom/script
@@ -262,6 +259,17 @@ label-indicator-padding = 0
 label-indicator-margin = 0
 label-indicator-background = ${colors.secondary}
 
+[module/right-corner]
+type = custom/text
+content = " "
+content-background = ${colors.background}
+content-padding = 0
+
+[module/left-corner]
+type = custom/text
+content = " "
+content-background = ${colors.background}
+content-padding = 0
 
 ; Other
 
