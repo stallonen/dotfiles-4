@@ -6,7 +6,7 @@
 
 **bspwm:**
 
-![Image alt](https://i.imgur.com/XqUOwCr.png)
+![Image alt](https://i.imgur.com/h4FKdMe.png)
 
 **Openbox:**
 
@@ -33,6 +33,7 @@
   - [Spotify](https://www.spotify.com/us/download/linux)
   - [MPD](https://www.musicpd.org/) + [ncmpcpp](https://rybczak.net/ncmpcpp/)
     - Notifications for MPD: [mpd-notification](https://github.com/eworm-de/mpd-notification)
+* Change color-schemes: [pywal](https://github.com/dylanaraps/pywal)
 * Image viewer: [feh](https://feh.finalrewind.org/)
 * Application launcher: [rofi](https://github.com/davatorium/rofi/)
 * AUR helper: [Yay](https://github.com/Jguer/yay)
