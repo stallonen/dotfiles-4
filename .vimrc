@@ -7,6 +7,8 @@ call plug#begin('~/.vim/plugged')
 	Plug 'chrisbra/Colorizer'
 	Plug 'preservim/nerdtree'
 
+	Plug 'dylanaraps/wal.vim'
+
 	Plug 'junegunn/seoul256.vim'
 	Plug 'junegunn/goyo.vim'
 	Plug 'junegunn/limelight.vim'
@@ -21,7 +23,7 @@ set hidden
 set showcmd
 
 " Font
-set encoding=utf8
+set encoding=utf-8
 set nolazyredraw
 set smartcase
 set ignorecase
@@ -57,13 +59,14 @@ let g:dracula_colorterm=0
 let g:dracula_italic=0
 
 " Airline
-let g:airline_theme='dracula'
+let g:airline_theme='term'
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#formatter='unique_tail'
-let g:airline_powerline_fonts=1
+let g:airline_powerline_fonts = 0
+let g:airline_symbols_ascii = 1
 
 " Colorscheme
-colorscheme default
+colorscheme wal
 
 " NerdTree
 autocmd StdinReadPre * let s:std_in=1

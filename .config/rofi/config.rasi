@@ -1,11 +1,12 @@
 configuration {
  modi:				"window,drun,ssh";
- theme: 			"~/.config/rofi/themes/gruvbox-dark-solid-modified.rasi";
- font: 				"Hack 10";
+ /*theme: 			"~/.config/rofi/themes/gruvbox-dark-solid-modified.rasi";*/
+ theme: 			"~/.cache/wal/colors-rofi-dark.rasi";
+ font: 				"SF Pro Display Bold 10";
  combi-modi: 		"window,drun,ssh";
  width: 			17;
  eh: 				1;
- bw:				3;
+ bw:				5;
  lines: 			10;
  sidebar-mode: 		false;
  location: 			0;

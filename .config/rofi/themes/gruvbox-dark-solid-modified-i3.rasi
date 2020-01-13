@@ -22,14 +22,14 @@
     gruvbox-dark-yellow-dark:  #d79921;
     gruvbox-dark-yellow-light: #fabd2f;
     gruvbox-dark-gray:         #ffffff;
-    gruvbox-dark-bc:           #f2f2f2;
+    gruvbox-dark-border:       #99cc99;
 
 
     /* Theme colors */
     background:                  @gruvbox-dark-bg0;
     background-color:            @background;
     foreground:                  @gruvbox-dark-fg1;
-    border-color:                @gruvbox-dark-bc;
+    border-color:                @gruvbox-dark-border;
     separatorcolor:              @background;
     scrollbar-handle:            @gruvbox-dark-bc;
 

@@ -17,23 +17,27 @@
 ;==========================================================
 
 [colors]
-;background = ${xrdb:color0:#222}
-background = #22262a
+background = ${xrdb:color0:#222}
+;background = #22262a
 background-alt = #22262a
-;foreground = ${xrdb:color7:#222}
-foreground = #ffffff
-foreground-alt = #8e9aa4
-primary = #ff0000
-secondary = #fcedc5
-alert = #ff6666
+foreground = ${xrdb:color7:#222}
+;foreground = #ffffff
+foreground-alt = ${xrdb:color7:#222}
+;foreground-alt = #8e9aa4
+primary = ${xrdb:color1:#222}
+;primary = #ff0000
+secondary = ${xrdb:color2:#222}
+;secondary = #fcedc5
+alert = ${xrdb:color3:#222}
+;alert = #ff6666
 
 [bar/main]
 ;monitor = ${env:MONITOR:HDMI-1}
-width = 97.6%
-height = 30
-offset-x = 1.2%
-offset-y = 1.9%
-radius = 0.4
+width = 1630
+height = 35
+offset-x = 25
+offset-y = 25
+radius = 0
 fixed-center = true
 
 background = ${colors.background}
@@ -42,27 +46,28 @@ foreground = ${colors.foreground}
 line-size = 0
 line-color = #f00
 
-border-size = 2
-border-color = #d9d9d9
+border-size = 3
+border-color = ${xrdb:color1:#222}
+;border-color = #d9d9d9
 
-padding-left = 2
-padding-right = 2
+padding-left = 5
+padding-right = 5
 
-module-margin-left = 1
-module-margin-right = 1
+module-margin-left = 3
+module-margin-right = 3
 
-font-0 = xos4 Terminus:pixelsize=10;2
+font-0 = SF Pro Display:style=Bold:size=10:antialias=true;2
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;2
 font-2 = siji:pixelsize=10;2
 font-3 = FontAwesome 5 Free:size=10:style=Solid;2
 font-4 = Material Icons:style=Regular;2
-font-5 = Weather Icons:size=10;4
+font-5 = Weather Icons:size=10;2
 font-6 = Font Awesome 5 Brands:pixelsize=10;2
 font-7 = Font Awesome 5 Free:pixelsize=10;2
 
 modules-left = menu spotify_status mpd
 modules-center = bspwm
-modules-right = openweathermap pulseaudio skb date poweroff
+modules-right = pulseaudio skb date poweroff
 
 tray-position = none
 tray-background = ${colors.background}
@@ -101,22 +106,23 @@ ws-icon-5 = other;
 ws-icon-default = 
 
 label-focused = %icon%
-label-focused-foreground = #ffffff
-label-focused-background = ${colors.background-alt}
+label-focused-foreground = ${xrdb:color1:#222}
+;label-focused-foreground = #ffffff
+label-focused-background = ${colors.background}
 label-focused-underline= ${colors.primary}
-label-focused-padding = 1
+label-focused-padding = 2
 
 label-occupied = %icon%
-label-occupied-foreground = #aab3bb
-label-occupied-padding = 1
+label-occupied-foreground = ${xrdb:color7:#222}
+label-occupied-padding = 2
 
 label-urgent = %icon%
 label-urgent-background = ${colors.alert}
-label-urgent-padding = 1
+label-urgent-padding = 2
 
 label-empty = %icon%
-label-empty-foreground = #4f5a63
-label-empty-padding = 1
+label-empty-foreground = #4a4a4a
+label-empty-padding = 2
 
 ; Separator in between workspaces
 ;label-separator = |
@@ -125,21 +131,24 @@ label-empty-padding = 1
 
 [module/menu]
 type = custom/menu
+expand-right = true
 format-spacing = 1
-label-separator = |
+label-separator = "  "
 format = <label-toggle><menu>
 label-open = ""
 label-close = ""
-menu-0-0 = "Browsers"
-menu-0-0-exec = menu-open-1
-menu-0-1 = "Chats"
-menu-0-1-exec = menu-open-2
-menu-0-2 = "Edit"
-menu-0-2-exec = menu-open-3
-menu-0-3 = "Media"
-menu-0-3-exec = menu-open-4
-menu-0-4 = "Power"
-menu-0-4-exec = ~/scripts/power.sh
+label-open-foreground = ${xrdb:color2:#222}
+label-close-foreground = ${xrdb:color2:#222}
+menu-0-0 = "App Menu"
+menu-0-0-exec = rofi -show drun -width 30 -lines 20 -location 1 -xoffset 25 -yoffset 91 -columns 2 
+menu-0-1 = "Browsers"
+menu-0-1-exec = menu-open-1
+menu-0-2 = "Chats"
+menu-0-2-exec = menu-open-2
+menu-0-3 = "Edit"
+menu-0-3-exec = menu-open-3
+menu-0-4 = "Graphics"
+menu-0-4-exec = menu-open-4
 
 menu-1-0 = "Chromium"
 menu-1-0-exec = chromium &
@@ -156,16 +165,16 @@ menu-3-0-exec = urxvt -e vim &
 menu-3-1 = "Sublime Text"
 menu-3-1-exec = subl3 &
 
-menu-4-0 = "Spotify"
-menu-4-0-exec = spotify &
-menu-4-1 = "ncmpcpp"
-menu-4-1-exec = urxvt -e ncmpcpp &
+menu-4-0 = "GIMP"
+menu-4-0-exec = gimp &
+menu-4-1 = "Inkscape"
+menu-4-1-exec = Inkscape &
 
 [module/spotify_status]
 type = custom/script
 interval = 1
 format = <label>
-exec = python /home/ma/scripts/polybar/spotify_status.py -f '|  {artist} - {song}'
+exec = python /home/ma/scripts/polybar/spotify_status.py -f '|       {artist} - {song}'
 
 [module/mpd]
 type = internal/mpd
@@ -205,13 +214,15 @@ type = custom/script
 exec = skb
 tail = true
 interval = 0.5
-format-prefix = " "
+format-prefix = "  "
+format-prefix-foreground = ${xrdb:color5:#222}
 
 [module/date]
 type = internal/date
 interval = 5
-
-label =  %time%
+label = %time%
+format-prefix = " "
+format-prefix-foreground = ${xrdb:color3:#222}
 
 ;date = %d/%m
 date-alt = %A, %d/%m/%Y
@@ -223,17 +234,25 @@ time-alt = %A, %d/%m/%Y
 type = internal/pulseaudio
 
 ;format-volume = <label-volume> <bar-volume>
-format-volume = <label-volume>
-label-volume =  %percentage%%
+format-volume = <ramp-volume> <label-volume>
+label-volume = %percentage%%
 label-volume-foreground = ${root.foreground}
+
+; Only applies if <ramp-volume> is used
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-foreground = ${xrdb:color4:#222}
 
 label-muted = muted
 label-muted-foreground = #666
 
 [module/poweroff]
 type = custom/script
-exec = echo ""
+exec = echo " "
 click-left = "~/scripts/power.sh"
+format-prefix = ""
+format-prefix-foreground = ${xrdb:color2:#222}
 
 ; Inactive modules
 

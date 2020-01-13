@@ -57,7 +57,7 @@
 
 ! Window geometry 
 
-URxvt.geometry:         87x28
+URxvt.geometry:         75x28
 URxvt.loginShell:       false
 URxvt.meta:             ignore
 URxvt.utmpInhibit:      true
@@ -66,21 +66,22 @@ URxvt.internalBorder:	20
 
 ! Font
 
-URxvt*font:xft: Hack:size=10
-!URxvt*font:xft: xos4 Terminus:size=8
-!URxvt.letterSpace: -1
+!URxvt*font:xft: Source Code Pro for Powerline:size=10
+URxvt*font:xft:			Hack:size=10
+!URxvt*font:xft:		xos4 Terminus:size=8
+!URxvt.letterSpace:		-1
 
 
 ! Scrollback buffer
 
-URxvt.secondaryWheel: 1
+URxvt.secondaryWheel: 	1
 
 
 ! Cursor
 
-URxvt.cursorUnderline: 1
-URxvt.cursorBlink: true
-URxvt.cursorColor: white
+URxvt.cursorUnderline:	1
+URxvt.cursorBlink:      true
+URxvt.cursorColor:		white
 
 
 ! Man-pages color
@@ -96,14 +97,14 @@ URxvt.colorBD:           cyan
 
 ! Scrollbar
 
-URxvt*scrollBar:	false
+URxvt*scrollBar:		false
 URxvt*scrollBar_right:  true
 URxvt*scrollstyle:      rxvt
 
 
 ! App icon
 
-!URxvt.iconFile:	/usr/share/icons/hicolor/scalable/apps/Terminal.svg
+!URxvt.iconFile:		/usr/share/icons/hicolor/scalable/apps/Terminal.svg
 
 
 ! Clickable URLs

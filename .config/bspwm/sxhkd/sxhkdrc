@@ -12,7 +12,8 @@ super + @space
 
 # rofi run
 super + r
-	rofi -show run
+	rofi -show run -lines 20 -location 1 -xoffset 25 -yoffset 91
+	#rofi -show run
 
 # chromium
 super + b
@@ -21,10 +22,6 @@ super + b
 # pcmanfm
 super + alt + f
 	pcmanfm
-
-# screenshot
-super + shift + s
-	~/scripts/screenshot-dmenu.sh
 
 # ncmpcpp
 super + n
@@ -53,17 +50,9 @@ XF86AudioPrev
 XF86AudioNext
 	dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
 
-# volume up
-XF86AudioRaiseVolume
-	amixer -q sset Master 10%+
-
-# volume up
-XF86AudioLowerVolume
-	amixer -q sset Master 10%-
-
-# volume mute
-XF86AudioMute
-	amixer -q -D pulse sset Master toggle
+# volume
+XF86Audio{RaiseVolume,LowerVolume,Mute}
+	amixer {-q sset Master 5%+,-q sset Master 5%-,-q -D pulse sset Master toggle}
 
 # lockscreen
 super + shift l
@@ -71,7 +60,15 @@ super + shift l
 
 # clipboard
 super + c
-	rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
+	rofi -width 15 -lines 15 -location 1 -xoffset 25 -yoffset 91 -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
+
+# screenshot
+Print
+	~/scripts/screenshot-dmenu.sh
+
+# calculator
+super + 0
+	=
 
 # make sxhkd reload its configuration files:
 super + Escape

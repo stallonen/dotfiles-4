@@ -1,3 +1,4 @@
+# Folders
 alias home="cd $HOME"
 alias config="cd ~/.config/"
 alias downloads="cd $HOME/Downloads"
@@ -6,8 +7,9 @@ alias images="cd $HOME/pics"
 
 # Pacman
 alias install="sudo pacman -S"
+alias update="sudo pacman -Syu"
 
-# Xdefaults
+# Xresources
 alias xconf="vim ~/.Xresources"
 alias xreload="xrdb -load ~/.Xresources"
 
@@ -17,5 +19,7 @@ alias git-push="~/scripts/git-push.sh"
 
 # Feh
 alias set-random-wallpaper="feh -z --bg-fill ~/pics/wallpapers/"
-
 alias watch='mpv --ytdl-format="bestvideo[ext=mp4][height<=?1080]+bestaudio[ext=m4a]" $1'
+
+# Colors
+alias colorscheme="wal -i /home/ma/pics/wallpapers/; sleep 0.10s; bspc wm -r"
