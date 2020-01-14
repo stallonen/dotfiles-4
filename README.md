@@ -32,7 +32,9 @@
 * Screen locker: [i3lock](https://i3wm.org/i3lock/) with [simple script](https://github.com/sadparadiseinhell/dotfiles/blob/master/scripts/lock.sh)
 * Screenshot tool: [maim](https://github.com/naelstrof/maim)
 * Terminal: [urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html)
-* Text editor: [vim](https://www.vim.org/)
+* Text editor:
+  - [Sublime Text 3](https://www.sublimetext.com/3)
+  - [vim](https://www.vim.org/)
 * Volume control: [PNMixer](https://github.com/nicklan/pnmixer)
 * WM:
   - [bspwm](https://github.com/baskerville/bspwm)
