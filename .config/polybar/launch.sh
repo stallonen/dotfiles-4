@@ -1,11 +1,10 @@
 #!/bin/bash
 
-# Завершить текущие экземпляры polybar
+# Terminate already running bar instances
 killall -q polybar
 
-# Ожидание полного завершения работы процессов
+# Wait until the processes have been shut down
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
-# Запуск Polybar со стандартным расположением конфигурационного файла в ~/.config/polybar/config
-
-polybar main &
+# Launch Polybar
+polybar -c $HOME/.config/polybar/bspwm-polybar.conf main &

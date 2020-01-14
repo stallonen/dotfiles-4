@@ -130,7 +130,7 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1: "
+set $ws1 "1: "
 set $ws2 "2: "
 set $ws3 "3: "
 set $ws4 "4: "
@@ -221,13 +221,15 @@ for_window [class="Xarchiver"] floating enable
 exec_always "setxkbmap -model pc104 -layout us,ru,ua -variant ,, -option grp:alt_shift_toggle"
 exec_always --no-startup-id "$HOME/.config/i3/launch.sh"
 exec_always --no-startup-id "killall -q compton; compton --config /home/ma/.config/i3/compton-i3.conf"
-exec_always --no-startup-id "killall -q dunst; dunst -conf ~/.config/dunst/i3-dunstrc"
+exec_always --no-startup-id 'mkdir -p "${HOME}/.config/dunst"'
+exec_always --no-startup-id 'ln -sf "${HOME}/.cache/wal/i3-dunstrc" "${HOME}/.config/dunst/i3-dunstrc"'
+exec_always --no-startup-id "pkill dunst; dunst -conf ~/.config/dunst/i3-dunstrc"
 exec_always --no-startup-id "systemctl --user --now start greenclip.service"
 exec_always --no-startup-id "xsetroot -cursor_name left_ptr"
 exec_always --no-startup-id "xautolock -time 10 -locker '~/scripts/lock.sh'"
 
 # Wallpaper
-exec_always --no-startup-id "feh --randomize --bg-fill ~/pics/wallpapers*"
+#exec_always --no-startup-id "feh --randomize --bg-fill ~/pics/wallpapers*"
 #exec_always --no-startup-id "feh --bg-fill /home/ma/pics/wallpapers/sakura-street.jpg"
 
 
@@ -235,8 +237,8 @@ exec_always --no-startup-id "feh --randomize --bg-fill ~/pics/wallpapers*"
 #smart_borders on
 
 for_window [class="^.*"] border pixel 4
-for_window [class=".*(F|f)irefox.*"] border none 
-for_window [class=".*(R|r)xvt.*"] border pixel 4
+#for_window [class=".*(C|c)romium.*"] border none 
+#for_window [class=".*(R|r)xvt.*"] border pixel 4
 
 bindsym $mod+t border normal 4
 bindsym $mod+y border pixel 5 
@@ -249,11 +251,21 @@ gaps inner 20
 gaps outer 60
 
 
-# Colors
-client.focused #99cc99 #99cc99 #000000 #77bb77
-client.focused_inactive #393939 #393939 #888888 #292d2e
-client.unfocused #394047 #394047 #999999 #808080
-client.urgent #db6e7c #db6e7c #ffffff #900000
+# Set colors from Xresources
+# NOTE: The '#f0f0f0' in the lines below is the color i3 will use if it fails to get colors from Xresources.
+set_from_resource $fg i3wm.color7 #f2f2f2
+set_from_resource $bg i3wm.color0 #0b0b0b
+set_from_resource $br i3wm.color1
+set_from_resource $bru i3wm.color15
+
+# Class                 border   background   text   indicator   child_border
+client.focused          $br      $br          $fg    $br         $br
+client.focused_inactive $bg      $bg          $fg    $bg         $bg
+client.unfocused        $bg      $bg          $fg    $bg         $bg
+client.urgent           $bru     $bru         $fg    $bru        $bru
+client.placeholder      $bg      $bg          $fg    $bg         $bg
+
+client.background       $bg
 
 
 # Hotkeys

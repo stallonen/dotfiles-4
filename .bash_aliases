@@ -22,4 +22,4 @@ alias set-random-wallpaper="feh -z --bg-fill ~/pics/wallpapers/"
 alias watch='mpv --ytdl-format="bestvideo[ext=mp4][height<=?1080]+bestaudio[ext=m4a]" $1'
 
 # Colors
-alias colorscheme="wal -i /home/ma/pics/wallpapers/; sleep 0.10s; bspc wm -r"
+alias colorscheme="wal -i /home/ma/pics/wallpapers/; sleep 0.10s; bspc wm -r; i3-msg restart"
