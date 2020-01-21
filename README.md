@@ -8,10 +8,6 @@
 
 ![Image alt](https://i.imgur.com/WMrnvVX.png)
 
-**Openbox:**
-
-![Image alt](https://i.imgur.com/UgKdxgm.png)
-
 ### List of applications:
 
 * Audio player:
