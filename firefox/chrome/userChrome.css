@@ -1,6 +1,11 @@
 @import url('file:///home/ma/.cache/wal/colors.css');
 
-:root{--newtab-textbox-background-color:var(--color0);}
+:root{
+  --newtab-textbox-background-color:var(--color0);
+  --tab-min-height: 40px !important;
+}
+
+#TabsToolbar {height:var(--tab-min-height)!important; margin-top:-1px!important; margin-bottom:1px!important}
 
 #browser vbox#appcontent tabbrowser,
 #content, 
@@ -94,12 +99,17 @@ tab
 }
 
 
-.tabbrowser-tab{ opacity: 0.5 }
-.tabbrowser-tab:hover{ opacity: 0.75 }
+.tabbrowser-tab{ 
+  color: var(--color2) !important;
+  opacity: 0.4 
+}
+.tabbrowser-tab:hover{ 
+  color: var(--color3) !important;
+  opacity: 0.75 }
 .tabbrowser-tab[selected]{ opacity: 1 }
 
 input#urlbar-input {
-  caret-color: transparent !important;
+  caret-color: var(--color1) !important;
   text-align: center !important;
   width: 99999px !important;
 }
@@ -120,6 +130,7 @@ input#urlbar-input {
 
 
 #urlbar{
+  height: 30px !important;
 	box-shadow: none !important;
 	background-color: var(--color0) !important;
 	background: none !important;
